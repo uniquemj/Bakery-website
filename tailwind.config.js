@@ -9,6 +9,7 @@ export default {
       backgroundImage: {
         'header-image': "url('/src/assets/Header1.png')",
         'banner-image': "url('/src/assets/cake.png')",
+        'contact-image': "url('/src/assets/Contact.svg')"
       },
       lineHeight:{
         '4.5rem':'4.5rem'
@@ -65,13 +66,15 @@ export default {
         primary: "#f5f3f3",
         cardOverlay: "rgba(256,256,256,0.4)",
         lighttextGray: "#9ca0ab",
-        card: "rgba(256,256,256,0.8)",
+        card: "#F4F4F4",
         cartBg: "#282a2c",
         cartItem: "#2e3033",
         cartTotal: "#343739",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
 
